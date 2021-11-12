@@ -29,6 +29,7 @@ function TodoList(props) {
 
 
     const updateTodo = (todoId, newValue) => {
+        console.log(newValue)
         if (!newValue.text || /^\s*$/.test(newValue.text)) {
             return;
         }
